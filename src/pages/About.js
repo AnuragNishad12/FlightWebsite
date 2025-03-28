@@ -55,7 +55,7 @@ const About = () => {
           </div>
           <div className="timeline-item" data-aos="fade-up">
             <h3>2016</h3>
-            <p>JetSetGo achieves profitability</p>
+            <p>SpeedyWings achieves profitability</p>
           </div>
           <div className="timeline-item" data-aos="fade-up">
             <h3>2018</h3>
@@ -63,11 +63,11 @@ const About = () => {
           </div>
           <div className="timeline-item" data-aos="fade-up">
             <h3>2020</h3>
-            <p>JetSetGo responds to COVID emergency with JetSetRescue flights</p>
+            <p>SpeedyWings responds to COVID emergency with SpeedyWingsRescue flights</p>
           </div>
           <div className="timeline-item" data-aos="fade-up">
             <h3>2020</h3>
-            <p>JetSet Learn Academy launched to train pilots and crew in-house</p>
+            <p>SpeedyWings Learn Academy launched to train pilots and crew in-house</p>
           </div>
           <div className="timeline-item" data-aos="fade-up">
             <h3>2022</h3>
@@ -105,7 +105,7 @@ const About = () => {
             <img src="https://d3tfanr7troppj.cloudfront.net/static_files/images/000/004/605/original/Kanika_Tekriwal.png?1695280744" alt="Kanika Tekriwal" className="team-img" />
             <h3 className="team-name">Kanika Tekriwal</h3>
             <p className="team-role">Founder</p>
-            <p className="about">Kanika Tekriwal has more than a decade of experience in the aviation industry. She reshaped JetSetGo from a technology-driven marketplace to a leading asset management firm, defying industry bias along the way. Kanika is a woman who believes in adapting and modifying her plans rather than giving up, but never losing sight of the vision.</p>
+            <p className="about">Kanika Tekriwal has more than a decade of experience in the aviation industry. She reshaped SpeedyWings from a technology-driven marketplace to a leading asset management firm, defying industry bias along the way. Kanika is a woman who believes in adapting and modifying her plans rather than giving up, but never losing sight of the vision.</p>
           </div>
 
           {/* Second Team Member */}
@@ -113,7 +113,7 @@ const About = () => {
             <img src="https://d3tfanr7troppj.cloudfront.net/static_files/images/000/004/605/original/Kanika_Tekriwal.png?1695280744" alt="Hinata" className="team-img" />
             <h3 className="team-name">Hinata</h3>
             <p className="team-role">Co-Founder</p>
-            <p className="about">Kanika Tekriwal has more than a decade of experience in the aviation industry. She reshaped JetSetGo from a technology-driven marketplace to a leading asset management firm, defying industry bias along the way.</p>
+            <p className="about">Kanika Tekriwal has more than a decade of experience in the aviation industry. She reshaped SpeedyWings from a technology-driven marketplace to a leading asset management firm, defying industry bias along the way.</p>
           </div>
         </div>
       </section>

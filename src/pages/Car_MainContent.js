@@ -77,30 +77,31 @@ export default function CarComponent() {
   return (
     <div className="container mx-auto px-4 py-8">
     {/* Search Bar */}
-    <div className="flex justify-center gap-4 mb-8">
-      <input 
-        type="text" 
-        placeholder="Enter car name" 
-        value={departure} 
-        onChange={(e) => setDeparture(e.target.value)}
-        className="px-4 py-2 border rounded-md w-64"
-      />
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
+  <input 
+    type="text" 
+    placeholder="Enter car name" 
+    value={departure} 
+    onChange={(e) => setDeparture(e.target.value)}
+    className="px-4 py-2 border rounded-md w-full md:w-64"
+  />
 
-      <input 
-        type="number" 
-        placeholder="Max Price (INR)" 
-        value={destination} 
-        onChange={(e) => setDestination(e.target.value)}
-        className="px-4 py-2 border rounded-md w-64"
-      />
+  <input 
+    type="number" 
+    placeholder="Max Price (INR)" 
+    value={destination} 
+    onChange={(e) => setDestination(e.target.value)}
+    className="px-4 py-2 border rounded-md w-full md:w-64"
+  />
 
-      <button 
-        onClick={handleFilter} 
-        className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-      >
-        Search
-      </button>
-    </div>
+  <button 
+    onClick={handleFilter} 
+    className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 w-full md:w-auto"
+  >
+    Search
+  </button>
+</div>
+
 
     {/* No Cars Message */}
     {filteredJets.length === 0 ? (

@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </div>
-        <div className="logo">JetSetGo</div>
+        <div className="logo">SpeedyWings</div>
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li><a href="/" className="active">Home</a></li>
           <li><a href="/about">About</a></li>

@@ -11,7 +11,7 @@ const HeroSection = () => {
   const descriptions = [
     "Redefine your air travel experience with our private jet charters. Skip the lines and soar above with unparalleled privacy, personalized service, and all the luxury you deserve. Reach your destination faster and in style.",
     "Discover the art of luxury at sea. Our premium yacht services offer unparalleled comfort and bespoke experiences, from serene ocean cruises to lavish private parties. Indulge in the ultimate maritime adventure.",
-    "Turn every journey into a first-class experience with our elite selection of luxury cars. Whether for a special occasion or everyday indulgence, we offer the finest vehicles for those who demand the best on the road."
+  
   ];
 
   const images = [
@@ -61,12 +61,10 @@ const HeroSection = () => {
           {descriptions[currentIndex]}
         </p>
         <div className="flex gap-4 justify-center">
-          <a href="#book" className="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
-            Book Now
+          <a href="/Enqiry" className="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
+            Enquiry Now
           </a>
-          <a href="#learn-more" className="px-6 py-3 border border-white hover:bg-white hover:text-black rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
-            Learn More
-          </a>
+        
         </div>
       </div>
     </section>
