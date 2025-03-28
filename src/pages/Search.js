@@ -177,35 +177,36 @@ export default function FlightSearch() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Search Bar */}
-      <div className="flex justify-center gap-4 mb-8 max-w-3xl mx-auto">
-        <select 
-          defaultValue="" 
-          onChange={(e) => setDeparture(e.target.value)} 
-          className="px-4 py-2 border rounded-md w-48 text-sm"
-        >
-          <option value="" disabled>From</option>
-          {[...new Set(filteredJets.map((jet) => jet.departure))].map((city) => (
-            <option key={city} value={city}>{city}</option>
-          ))}
-        </select>
+      <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 max-w-3xl mx-auto">
+  <select 
+    defaultValue="" 
+    onChange={(e) => setDeparture(e.target.value)} 
+    className="px-4 py-2 border rounded-md w-full sm:w-48 text-sm"
+  >
+    <option value="" disabled>From</option>
+    {[...new Set(filteredJets.map((jet) => jet.departure))].map((city) => (
+      <option key={city} value={city}>{city}</option>
+    ))}
+  </select>
 
-        <select 
-          onChange={(e) => setDestination(e.target.value)} 
-          className="px-4 py-2 border rounded-md w-48 text-sm"
-        >
-          <option value="">To</option>
-          {[...new Set(filteredJets.map((jet) => jet.destination))].map((city) => (
-            <option key={city} value={city}>{city}</option>
-          ))}
-        </select>
+  <select 
+    onChange={(e) => setDestination(e.target.value)} 
+    className="px-4 py-2 border rounded-md w-full sm:w-48 text-sm"
+  >
+    <option value="">To</option>
+    {[...new Set(filteredJets.map((jet) => jet.destination))].map((city) => (
+      <option key={city} value={city}>{city}</option>
+    ))}
+  </select>
 
-        <button 
-          onClick={handleFilter} 
-          className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm"
-        >
-          Search
-        </button>
-      </div>
+  <button 
+    onClick={handleFilter} 
+    className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm w-full sm:w-auto"
+  >
+    Search
+  </button>
+</div>
+
 
       {/* No Flights Message */}
       {filteredJets.length === 0 ? (
