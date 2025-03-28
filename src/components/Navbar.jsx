@@ -1,70 +1,56 @@
-import React, { useState } from 'react';
-import '../pages/navbar.css';
+import { useState, useEffect } from "react";
+import "../pages/navbar.css";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [exploreOpen, setExploreOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // Mobile menu state
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
 
-  const toggleDropdown = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDropdownOpen(!dropdownOpen);
-  };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-    setDropdownOpen(false);
+  // Toggle submenu function for mobile
+  const toggleExploreMenu = () => {
+    setExploreOpen((prev) => !prev);
   };
 
   return (
-    <nav>
-      <div className="menu">
-        <div className="logo">
-          <a href="/">
-            <img src="/images/logo.png" alt="Logo" />
-          </a>
-        </div>
-
-        <input
-          type="checkbox"
-          id="check"
-          checked={menuOpen}
-          onChange={toggleMenu}
-        />
-
-        <ul className={menuOpen ? "open" : ""}>
-          <li><a href="/" className="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/">Deal of The Day</a></li>
-          <li className={`dropdown ${dropdownOpen ? 'active' : ''}`}>
-            <a 
-              href="#"
-              onClick={toggleDropdown}
-            >
-              Explore {dropdownOpen ? '▲' : '▼'}
-            </a>
-            {dropdownOpen && (
-              <ul className="sub-menu mobile-dropdown">
-                <li><a href="/p">Jets</a></li>
-                <li><a href="/helicopter">Chopper</a></li>
-                <li><a href="/yacht">Yacht</a></li>
-                <li><a href="/c">Car</a></li>
-              </ul>
-            )}
-          </li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="#contact-sec">Contact</a></li>
-          <li><button className="login-button">Enquiry</button></li>
-        </ul>
-
-        <label htmlFor="check" className="btn bars">
-          <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
-        </label>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
       </div>
+      <div className="logo">JetSetGo</div>
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <li><a href="/" className="active">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/">Deal of The Day</a></li>
+
+        {/* Explore Dropdown */}
+        <li 
+          className={`dropdown ${exploreOpen ? "open" : ""}`} 
+          onMouseEnter={() => window.innerWidth > 768 && setExploreOpen(true)}
+          onMouseLeave={() => window.innerWidth > 768 && setExploreOpen(false)}
+          onClick={toggleExploreMenu} // Works on click for mobile
+        >
+          <a href="#">Explore</a>
+          <ul className={`submenu ${exploreOpen ? "show" : ""}`}>
+            <li><a href="/p">Jets</a></li>
+            <li><a href="/helicopter">Chopper</a></li>
+            <li><a href="/yacht">Yacht</a></li>
+            <li><a href="/c">Car</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#contact-sec">Contact</a></li>
+        <li><button className="login-button">Enquiry</button></li>
+      </ul>
     </nav>
   );
 };
