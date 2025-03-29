@@ -7,11 +7,13 @@ import FaqSection from './components/FaqSection.jsx';
 import OffersSection from './components/OffersSection.jsx';
 import TestimonialSection from './components/TestimonialSection.jsx';
 import WhyChooseUs from './components/WhyChooseUs.jsx';
+import HomePage from './NewPages/FrontPage.jsx';
 
 function App() {
     return ( 
       <div>
         <Navbar /> 
+        <HomePage/>
        < HeroSection /> 
        < WhyChooseUs />
        < OffersSection />

@@ -53,10 +53,11 @@ const HeroSection = () => {
     <section className="hero relative w-full h-screen flex items-center justify-center text-white bg-cover bg-center transition-all duration-1000">
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-6">
         <h1 className="hero-title text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in">
-          {titles[currentIndex]}
+          {/* {titles[currentIndex]} */}
+
         </h1>
         <p className="hero-description text-lg md:text-xl opacity-80 mb-10 animate-fade-in max-w-3xl">
-          {descriptions[currentIndex]}
+          {/* {descriptions[currentIndex]} */}
         </p>
         <a href="/Enquiry" className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
   Enquiry Now
