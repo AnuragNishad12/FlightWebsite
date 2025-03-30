@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from './components/Navbar.jsx';
 import HeroSection from './components/HeroSection.jsx';
-import Footer from './components/Footer.jsx';
+// import Footer from './components/Footer.jsx';
+import Footer from './NewPages/Footer.jsx'
 import FloatingButton from './components/FloatingButton.jsx';
 import FaqSection from './components/FaqSection.jsx';
 import OffersSection from './components/OffersSection.jsx';
 import TestimonialSection from './components/TestimonialSection.jsx';
 import WhyChooseUs from './components/WhyChooseUs.jsx';
 import HomePage from './NewPages/FrontPage.jsx';
+import HomeCarousel from './NewPages/HomeCarousel.jsx';
 
 function App() {
     return ( 
@@ -16,10 +18,12 @@ function App() {
         <HomePage/>
        < HeroSection /> 
        < WhyChooseUs />
-       < OffersSection />
+       {/* < OffersSection /> */}
+       <HomeCarousel/>
        < TestimonialSection />
        < FaqSection />
-       < Footer /> 
+       {/* < Footer />  */}
+       <Footer/>
        < FloatingButton />
 
       </div>

@@ -1,18 +1,29 @@
 import React from "react";
+import video from "../assets/video.mp4"
 
 const HomePage = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
 
-<div className="absolute top-0 left-0 w-full h-full">
-  <iframe 
-    className="w-full h-full absolute top-0 left-0"
-    src="https://www.pexels.com/video/1650628/embed/"
-    frameBorder="0"
-    allow="autoplay; fullscreen"
-    allowFullScreen
-  ></iframe>
-</div>
+{/* <iframe
+  className="w-full h-full absolute top-0 left-0 object-cover"
+  src="https://www.youtube.com/embed/0vuBY2lmc9Q?autoplay=1&mute=1&loop=1&playlist=0vuBY2lmc9Q&controls=0&showinfo=0&modestbranding=1"
+  title="Background Video"
+  frameBorder="0"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+></iframe> */}
+<video
+  autoPlay
+  loop
+  muted
+  className="absolute w-full h-full object-cover"
+>
+  <source src={video} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
 
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
@@ -33,9 +44,9 @@ const HomePage = () => {
 
       {/* Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-        {/* <p className="text-lg uppercase">Fly Beyond.™</p>
-        <h1 className="text-5xl font-bold">The World's Premier</h1>
-        <h2 className="text-5xl font-bold text-red-500">Private Aviation Network</h2> */}
+        <p className="text-lg uppercase">Fly Beyond.™</p>
+        <h1 className="text-5xl font-bold">The India's Best</h1>
+        <h2 className="text-5xl font-bold text-red-500">Private Aviation Network</h2>
       </div>
     </div>
   );

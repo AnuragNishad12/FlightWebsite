@@ -73,3 +73,4 @@ const OfferCard = ({ offer, startCountdown }) => {
 };
 
 export default OffersSection;
+

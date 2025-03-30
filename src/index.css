@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.logo a {
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+}
+
 
 :root {
     --primary-color: #003366;

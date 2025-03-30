@@ -30,9 +30,9 @@ const Navbar = () => {
         </div>
         <div className="logo"><a href="/">SpeedyWings</a></div>
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="/" className="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/">Deal of The Day</a></li>
+                <li><a href="/" className="active">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/">Deal of The Day</a></li>
 
           {/* Explore Dropdown */}
           <li 
@@ -53,7 +53,15 @@ const Navbar = () => {
           <li><a href="/blog">Blog</a></li>
           <li><a href="#contact-sec">Contact</a></li>
           <li>
-            <a className="login-button" href="/Enqiry" onClick={() => setShowModal(true)}>Enquiry</a>
+            {/* <a className="login-button" href="/Enqiry" onClick={() => setShowModal(true)}>Enquiry</a> */}
+            <a 
+  className="bg-[#9333ea] text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition"
+  href="/Enqiry"
+  onClick={() => setShowModal(true)}
+>
+  Enquiry
+</a>
+
           </li>
         </ul>
       </nav>
