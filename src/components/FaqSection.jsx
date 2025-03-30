@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const FaqSection = () => {
   const [faqData, setFaqData] = useState([]);
 
   useEffect(() => {
-    // Fetch FAQ data from the JSON file
-    fetch('/json/faq.json')
+    fetch("/json/faq.json")
       .then((response) => response.json())
-      .then((data) => {
-        setFaqData(data);
-      })
-      .catch((error) => console.error('Error fetching FAQ data:', error));
+      .then((data) => setFaqData(data))
+      .catch((error) => console.error("Error fetching FAQ data:", error));
   }, []);
 
   const toggleFaq = (index) => {
@@ -22,22 +19,22 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="faq-container">
-      <h1>Frequently Asked Questions</h1>
-      <div id="faq-list" data-aos="fade-up">
+    <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+      <h1 className="text-xl font-semibold text-gray-800 mb-4">Frequently Asked Questions</h1>
+      <div className="space-y-4">
         {faqData.map((item, index) => (
-          <div
-            key={index}
-            className={`faq-item ${item.active ? 'active' : ''}`}
-          >
+          <div key={index} className="border-b pb-3">
             <div
-              className="faq-question"
+              className="flex justify-between items-center cursor-pointer text-sm font-medium text-gray-700 py-2"
               onClick={() => toggleFaq(index)}
             >
-              {item.question} <i className={`fas ${item.active ? 'fa-minus' : 'fa-plus'}`}></i>
+              {item.question}
+              <i
+                className={`fas ${item.active ? "fa-minus" : "fa-plus"} text-[#9333ea]`}
+              ></i>
             </div>
             {item.active && (
-              <div className="faq-answer">
+              <div className="text-sm text-gray-600 mt-2">
                 <p>{item.answer}</p>
               </div>
             )}

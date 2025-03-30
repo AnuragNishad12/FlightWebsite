@@ -10,6 +10,7 @@ import TestimonialSection from './components/TestimonialSection.jsx';
 import WhyChooseUs from './components/WhyChooseUs.jsx';
 import HomePage from './NewPages/FrontPage.jsx';
 import HomeCarousel from './NewPages/HomeCarousel.jsx';
+import CustomerReviews from './NewPages/CustomerReviews.jsx';
 
 function App() {
     return ( 
@@ -20,11 +21,12 @@ function App() {
        < WhyChooseUs />
        {/* < OffersSection /> */}
        <HomeCarousel/>
-       < TestimonialSection />
+       {/* < TestimonialSection /> */}
+       <CustomerReviews/>
        < FaqSection />
        {/* < Footer />  */}
        <Footer/>
-       < FloatingButton />
+       {/* < FloatingButton /> */}
 
       </div>
 
