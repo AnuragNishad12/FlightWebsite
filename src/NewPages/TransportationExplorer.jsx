@@ -70,7 +70,7 @@ export default function VerticalNavbar() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="bg-white p-4 md:p-8 rounded-2xl shadow-lg w-full max-w-sm md:w-96 text-center border-t-4 border-[#9333ea]"
+          className="bg-white p-6 md:p-10 rounded-2xl shadow-lg w-full max-w-lg md:max-w-xl text-center border-t-4 border-[#9333ea]"
         >
           <img src={selected.image} alt={selected.name} className="w-full h-40 md:h-48 object-cover rounded-lg shadow-sm" />
           <h2 className="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-[#9333ea]">{selected.name}</h2>
