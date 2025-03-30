@@ -11,14 +11,16 @@ import WhyChooseUs from './components/WhyChooseUs.jsx';
 import HomePage from './NewPages/FrontPage.jsx';
 import HomeCarousel from './NewPages/HomeCarousel.jsx';
 import CustomerReviews from './NewPages/CustomerReviews.jsx';
+import Services from './NewPages/Services.jsx';
 
 function App() {
     return ( 
       <div>
         <Navbar /> 
         <HomePage/>
-       < HeroSection /> 
-       < WhyChooseUs />
+       {/* < HeroSection />  */}
+        <Services/>
+       {/* < WhyChooseUs /> */}
        {/* < OffersSection /> */}
        <HomeCarousel/>
        {/* < TestimonialSection /> */}
