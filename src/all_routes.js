@@ -8,6 +8,8 @@ import Blog from './pages/Blog'
 import HelicopterBooking from './pages/HelicopterBooking'
 import YachtBooking from './pages/YachtBooking'
 import InquiryForm from './pages/InquiryForm'
+import ImagePage from './NewPages/Jets/JetDetails'
+import AboutUs from './NewPages/AboutUs'
 export default function all_routes() {
   let  all_allroutes = createBrowserRouter(
     [
@@ -18,7 +20,7 @@ export default function all_routes() {
         },
         {
             path:'p',
-            element: <Products />
+            element: <ImagePage />
 
         },
         {
@@ -27,7 +29,7 @@ export default function all_routes() {
         }
         ,{
           path:'about',
-          element: <About />
+          element: <AboutUs />
         },
         {
           path:'blog',
