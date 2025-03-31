@@ -112,7 +112,7 @@ const LuxurySlider = () => {
       {/* Logo */}
       <div className="absolute top-6 left-6 z-20">
         <div className="bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg">
-          <h3 className="text-white font-bold text-lg">Speedy<span className="text-amber-400">Wings</span></h3>
+          <h3 className="text-white font-bold text-lg">Xele<span className="text-amber-400">vate</span></h3>
         </div>
       </div>
       
