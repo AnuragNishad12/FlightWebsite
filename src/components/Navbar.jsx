@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </div>
-        <div className="logo"><a href="/">SpeedyWings</a></div>
+        <div className="logo"><a href="/">xelevate</a></div>
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
                 <li><a href="/" className="active">Home</a></li>
                 <li><a href="/about">About</a></li>
@@ -56,10 +56,9 @@ const Navbar = () => {
             {/* <a className="login-button" href="/Enqiry" onClick={() => setShowModal(true)}>Enquiry</a> */}
             <a 
   className="bg-[#9333ea] text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition"
-  href="/Enqiry"
-  onClick={() => setShowModal(true)}
+  href="https://wa.me/918429014352?text=Hello!%20I%20need%20help." 
 >
-  Enquiry
+  Chat Now
 </a>
 
           </li>

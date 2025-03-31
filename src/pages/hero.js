@@ -1,26 +1,4 @@
-// import React from 'react';
-// import './hero.css'; // Import the CSS for other styles
 
-// function Hero() {
-//   const heroStyle = {
-//     height: '400px', // Adjust height as necessary
-//     backgroundImage: `url(${process.env.PUBLIC_URL}/jet_photo.webp)`,
-//     backgroundSize: 'cover', // Use cover to fill the height, adjust as necessary
-//     backgroundPosition: 'center center', // Adjust position to best fit the view
-//     backgroundRepeat: 'no-repeat' // Ensure the image doesn't tile
-//   };
-
-//   return (
-//     <div className="hero" data-aos="fade-up" data-aos-duration="1800" style={heroStyle}>
-//       <div className="hero-text">
-//         <h1>Search Lists</h1>
-//         <p>Explore our services and products.</p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Hero;
 
 import React from "react";
 

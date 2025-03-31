@@ -65,7 +65,7 @@ const ContactPage = () => {
               <h3 className="mt-4 text-xl font-bold text-gray-900">WhatsApp</h3>
               <p className="mt-2 text-gray-600">24/7 instant messaging support</p>
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/918429014352?text=Hello!%20I%20need%20help." 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-600"

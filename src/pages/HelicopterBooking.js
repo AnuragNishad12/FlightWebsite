@@ -180,7 +180,7 @@ const HelicopterBooking = () => {
 
       {/* Booking Section */}
       <div className="py-16 bg-white w-full">
-        <ContactForm />
+        {/* <ContactForm /> */}
         <Footer />
       </div>
     </div>

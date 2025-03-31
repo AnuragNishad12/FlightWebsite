@@ -1,12 +1,14 @@
 import { FaInstagram, FaFacebookF, FaYoutube, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import logo from '../assets/logo.png'
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h2 className="text-3xl font-bold">Speedy Wings</h2>
+        <img src={logo} alt="Xelevate Logo" className="h-30 w-auto" />
+
           <p className="text-sm mt-3">
             JetSetGo, a trusted choice for those valuing time, service, and reliability. Explore unique features to customize your private flying experience your way.
           </p>
