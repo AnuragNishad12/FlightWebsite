@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
 
           <li><a href="/blog">Blog</a></li>
-          <li><a href="#contact-sec">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li>
             {/* <a className="login-button" href="/Enqiry" onClick={() => setShowModal(true)}>Enquiry</a> */}
             <a 

@@ -10,6 +10,8 @@ import YachtBooking from './pages/YachtBooking'
 import InquiryForm from './pages/InquiryForm'
 import ImagePage from './NewPages/Jets/JetDetails'
 import AboutUs from './NewPages/AboutUs'
+import ContactPage from './NewPages/ContactPage'
+import YachtPage from './NewPages/YachtPage'
 export default function all_routes() {
   let  all_allroutes = createBrowserRouter(
     [
@@ -39,10 +41,13 @@ export default function all_routes() {
           element:<HelicopterBooking   />     },
           {
             path:'yacht',
-            element:<YachtBooking   />     },
+            element:<YachtPage   />     },
             {
               path:'Enqiry',
             element:<InquiryForm   />  
+            },{
+              path:'contact',
+              element:<ContactPage/>
             }
           
 

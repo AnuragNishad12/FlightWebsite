@@ -186,31 +186,57 @@ const AircraftCard = ({ aircraft }) => {
 
   return (
     <div className="max-w-5xl mx-auto bg-white rounded-md shadow-md overflow-hidden mb-6">
-  <div className="md:flex">
-    <div className="md:w-1/2 p-3">
-      <ImageGallery images={aircraft.images} />
+  <div className="md:flex bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
+  <div className="md:w-1/2 p-6">
+    <ImageGallery images={aircraft.images} />
+  </div>
+  
+  <div className="md:w-1/2 p-8 flex flex-col justify-between">
+    <div>
+      <div className="mb-5">
+        <h2 className="text-3xl font-bold text-gray-900 mb-2 font-serif">
+          {aircraft.name}
+        </h2>
+        <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full"></div>
+      </div>
+
+      <h3 className="text-lg font-semibold text-gray-800 mb-3">Description</h3>
+      <p className="text-gray-600 leading-relaxed mb-5">
+        {aircraft.shortDescription}
+      </p>
     </div>
-    <div className="md:w-1/2 p-4">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-1">{aircraft.name}</h2>
-      <div className="border-b border-gray-200 mb-3"></div>
-      <h3 className="text-base font-medium text-gray-700 mb-1">Description</h3>
-      <p className="text-sm text-gray-600 mb-3">{aircraft.shortDescription}</p>
+
+    <div>
       <button 
         onClick={() => setShowDetails(!showDetails)}
-        className="text-red-500 text-sm font-medium hover:text-red-700 transition duration-150"
+        className="mb-6 w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-700 text-white rounded-lg font-medium hover:from-purple-700 hover:to-indigo-800 transition-all duration-300"
       >
-        {showDetails ? "Hide Details" : "See Details"}
+        {showDetails ? "Hide Specifications" : "View Full Specifications"}
       </button>
-      <div className="mt-3">
-      <p className="text-sm font-medium text-[#9333ea]">
-  Destination: <span className="font-semibold">{aircraft.destination}</span>
-</p>
-<p className="text-sm font-medium text-[#9333ea]">
-  Price: <span className="font-semibold">{aircraft.price}</span>
-</p>
-  </div>
+
+      <div className="space-y-4 border-t border-gray-100 pt-6">
+        <div className="flex items-center">
+          <svg className="w-5 h-5 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          <span className="text-gray-700 font-medium">
+            Route: <span className="text-gray-900 font-semibold">{aircraft.destination}</span>
+          </span>
+        </div>
+
+        <div className="flex items-center">
+          <svg className="w-5 h-5 text-purple-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span className="text-gray-700 font-medium">
+            Starting from <span className="text-2xl text-purple-700 font-bold">{aircraft.price}</span>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
+</div>
       
   {showDetails && (
        <div 

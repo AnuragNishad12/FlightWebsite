@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-black text-white py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h2 className="text-3xl font-bold">JetSetGo</h2>
+          <h2 className="text-3xl font-bold">Speedy Wings</h2>
           <p className="text-sm mt-3">
             JetSetGo, a trusted choice for those valuing time, service, and reliability. Explore unique features to customize your private flying experience your way.
           </p>

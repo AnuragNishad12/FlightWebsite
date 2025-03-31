@@ -13,6 +13,7 @@ import HomeCarousel from './NewPages/HomeCarousel.jsx';
 import CustomerReviews from './NewPages/CustomerReviews.jsx';
 import Services from './NewPages/Services.jsx';
 import LuxurySlider from './NewPages/LuxurySlider.jsx';
+import LuxuryTransportSelector from './NewPages/TransportationExplorer.jsx';
 
 function App() {
     return ( 
@@ -23,6 +24,7 @@ function App() {
        <HomeCarousel/>
        <LuxurySlider/>
         <Services/>
+        <LuxuryTransportSelector/>
        {/* < WhyChooseUs /> */}
        {/* < OffersSection /> */}
    
