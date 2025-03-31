@@ -1,5 +1,4 @@
 import Navbar from "../../components/Navbar";
-import VerticalNavbar from "../TransportationExplorer";
 import AircraftShowcase from "./ImageGallery";
 
 export default function ImagePage() {
@@ -18,6 +17,7 @@ export default function ImagePage() {
       </p>
     </div>
     <AircraftShowcase/>
+   
     </div>
       
     );
