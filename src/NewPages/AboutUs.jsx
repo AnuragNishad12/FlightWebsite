@@ -50,7 +50,8 @@ function AboutUs() {
       <div className="container mx-auto px-6 py-16 ">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2">
-            <h2 className="text-4xl font-bold mb-6 text-gray-800">Our Mission</h2>
+          <h2 className="text-4xl font-bold mt-6 mb-6 text-gray-800">Our Mission</h2>
+
             <div className="h-1 w-16 bg-purple-600 mb-8"></div>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               At SkyWings Aviation, we are committed to redefining air travel with cutting-edge technology and exceptional service. With a fleet of modern, fuel-efficient aircraft, we connect passengers to over 100 destinations worldwide, ensuring safety, comfort, and sustainability at every altitude.
