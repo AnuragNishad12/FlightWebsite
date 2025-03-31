@@ -61,7 +61,7 @@ const LuxurySlider = () => {
         vertical: true,
         verticalSwiping: true,
         autoplay: true,          // Enables automatic sliding
-        autoplaySpeed: 1000,     // Sets the interval to 1 second (1000ms)
+        autoplaySpeed: 3000,     // Sets the interval to 1 second (1000ms)
         nextArrow: <button className="absolute bottom-5 right-10 bg-white p-2 rounded-full shadow-lg">➡️</button>,
         prevArrow: <button className="absolute bottom-5 left-10 bg-white p-2 rounded-full shadow-lg">⬅️</button>,
       };
