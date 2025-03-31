@@ -12,6 +12,7 @@ import HomePage from './NewPages/FrontPage.jsx';
 import HomeCarousel from './NewPages/HomeCarousel.jsx';
 import CustomerReviews from './NewPages/CustomerReviews.jsx';
 import Services from './NewPages/Services.jsx';
+import LuxurySlider from './NewPages/LuxurySlider.jsx';
 
 function App() {
     return ( 
@@ -19,10 +20,12 @@ function App() {
         <Navbar /> 
         <HomePage/>
        {/* < HeroSection />  */}
+       <HomeCarousel/>
+       <LuxurySlider/>
         <Services/>
        {/* < WhyChooseUs /> */}
        {/* < OffersSection /> */}
-       <HomeCarousel/>
+   
        {/* < TestimonialSection /> */}
        <CustomerReviews/>
        < FaqSection />

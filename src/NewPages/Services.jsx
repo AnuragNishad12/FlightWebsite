@@ -18,6 +18,7 @@ const services = [
     description: "Sail the seas in style with our exclusive yacht rentals, complete with luxury amenities and crew.",
   },
   {
+
     icon: <FaHelicopter className="text-3xl text-[#9333ea]" />, 
     title: "Helicopter Services", 
     description: "Skip traffic with our elite helicopter transfers and city tours, offering speed and scenic aerial views.",
@@ -34,7 +35,7 @@ function CardContent({ children }) {
 
 export default function Services() {
   return (
-    <div className="container mx-auto px-4 py-10 text-center">
+    <div className="container mx-auto px-0 py-0 text-center">
       <h1 className="text-black text-3xl font-bold mb-6">Our Services</h1>
       <div className="flex justify-center">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">

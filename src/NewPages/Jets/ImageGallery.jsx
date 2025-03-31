@@ -8,6 +8,8 @@ const aircraftData = [
     id: 1,
     name: "Global 6000",
     aircraftType: "Large Jet",
+    destination:"Delhi -------> goa",
+    price:"₹800000",
     images: [
       "https://media.lunajets.com/media/bombardier-global-express-6000.jpg?width=1640&format=webp",
       "https://tse1.mm.bing.net/th?id=OIP.fuau-D_S6wbLQuPRHvwWlAHaE8&pid=Api&P=0&h=180",
@@ -53,6 +55,8 @@ const aircraftData = [
     id: 2,
     name: "Global 7500",
     aircraftType: "Large Jet",
+    destination:"Gurugam -------> Mumbai",
+    price:"₹500000",
     images: [
       "https://globaljet.aero/sites/default/files/2022-06/Bombardier%20Global%207500_Exterior%203%20[1600x1200].JPG",
       "https://globaljet.aero/sites/default/files/2024-01/Bombardier%20Global%207500_Fwd%20Cabin%201%20[1600x1200]_1.jpg",
@@ -98,6 +102,8 @@ const aircraftData = [
     id: 3,
     name: "Challenger 350",
     aircraftType: "Super Midsize Jet",
+    destination:"Gurugam -------> Pune",
+    price:"₹200000",
     images: [
       "https://bombardier.com/sites/default/files/styles/retina_1060x750/public/2020-11/DDBA0634_Challenger350_16A2593_V77_compress.jpg?itok=TUGlNr6l",
       "https://www.evojets.com/wp-content/uploads/2018/04/challenger-350.jpg",
@@ -195,6 +201,14 @@ const AircraftCard = ({ aircraft }) => {
       >
         {showDetails ? "Hide Details" : "See Details"}
       </button>
+      <div className="mt-3">
+      <p className="text-sm font-medium text-[#9333ea]">
+  Destination: <span className="font-semibold">{aircraft.destination}</span>
+</p>
+<p className="text-sm font-medium text-[#9333ea]">
+  Price: <span className="font-semibold">{aircraft.price}</span>
+</p>
+  </div>
     </div>
   </div>
       
@@ -372,7 +386,7 @@ const AircraftFilter = ({ onFilterChange }) => {
   };
   
   return (
-    <div className="bg-white p-4 rounded-md shadow-sm">
+    <div className="bg-white p-4 rounded-md shadow-sm border-1 border-[#9333ea]">
   <h2 className="text-lg font-semibold mb-3">Filter By</h2>
   <div className="border-b border-gray-200 my-3"></div>
 

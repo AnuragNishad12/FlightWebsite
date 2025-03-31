@@ -47,14 +47,29 @@ const CustomerReviews = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // Default for large screens
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets and smaller screens
+        settings: {
+          slidesToShow: 1, // Show only 1 card on tablets
+        },
+      },
+      {
+        breakpoint: 768, // Mobile screens
+        settings: {
+          slidesToShow: 1, // Show only 1 card on mobile
+        },
+      },
+    ],
   };
+  
 
   return (
     <div className="max-w-4xl mx-auto p-5">
