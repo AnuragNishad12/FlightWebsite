@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/FlightWebsite/static/css/main.fa1984cf.css",
+    "main.js": "/FlightWebsite/static/js/main.3c555fe4.js",
+    "static/media/video.mp4": "/FlightWebsite/static/media/video.ee485e50bdcc3f14d39c.mp4",
+    "static/media/logo.png": "/FlightWebsite/static/media/logo.e95b557c30e0d3f36136.png",
+    "index.html": "/FlightWebsite/index.html",
+    "static/media/slick.svg": "/FlightWebsite/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/FlightWebsite/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/FlightWebsite/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/FlightWebsite/static/media/slick.295183786cd8a1389865.woff",
+    "main.fa1984cf.css.map": "/FlightWebsite/static/css/main.fa1984cf.css.map",
+    "main.3c555fe4.js.map": "/FlightWebsite/static/js/main.3c555fe4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa1984cf.css",
+    "static/js/main.3c555fe4.js"
+  ]
+}
